@@ -1,16 +1,25 @@
 /*
 S C R A P P I N G   T O O L B O X  in javascript
 
-Ce qu'il faut pour relancer :
-	- initDB
-	- connectDB
-	- mainDBdef à runner
-	- waitForLoad
-	- extraireAvisTrustpilot
-	- startScraping
+Les fonctions principales du script
+	- initDB                    Initialise l'indexedDB
+	- connectDB                 Séparation des responsabilité, se connect à l'indexDB
+	- mainDBdef                 -> à runner pour faire l'initDB
+	- waitForLoad               un temporisateur    
+	- extraireAvisTrustpilot    un essai
+	- startScraping             -> Ici c'est le scrapper
+    - genericExportCSV          -> à runner à la fin pour faire un export CSV
 
-startScraping("oscaro.com",98,100)
-faire le download, vérifier les pages qui ne vont pas (20 par pages)
+
+Trois fonctions de base à lancer dans l'ordre
+- mainDBdef()
+- startScraping("oscaro.com",101,200);
+- genericExportCSV(MY_DB,"avis")
+
+la première définit la base ScraperDB et le store "avis" (et aussi logs et metadata mais que je n'utilise pas)
+la second instruction role le scrapper avec le spider TrustPilote sur oscaro.com (normalement on a plusieurs spider et on les branches conditionnellement, mais ici c'est mono TP), ca circule, collecte, stocke.
+le troisième instructon transpose le résultat en CSV
+
 */
 
 /*================analysis of fields of importance

@@ -20,6 +20,8 @@ la première définit la base ScraperDB et le store "avis" (et aussi logs et met
 la second instruction role le scrapper avec le spider TrustPilote sur oscaro.com (normalement on a plusieurs spider et on les branches conditionnellement, mais ici c'est mono TP), ca circule, collecte, stocke.
 le troisième instructon transpose le résultat en CSV
 
+Pour les windows.open, pensez à dévérouiller l'accés au popup pour le site que vous explorez
+
 */
 
 /*================analysis of fields of importance

@@ -1,7 +1,7 @@
 # Supply-Chain-Reviews
-Pour les collègues : Comment reprendre les dependencies du projet (ou comment passer son projet à son voisin). 
+Pour les collègues : Comment reprendre les *dependencies* du projet (ou comment passer son projet à son voisin). 
 Y a toute l'histoire de venv pyenv conda anaconda et les déboires du projet open source qui devient payant ...
-donc aujourd'hui et depuis 2024, y a une réaction de la communauté et l'action de la société *astral* avec `uv`
+donc aujourd'hui et depuis 2024, y a une réaction de la communauté et l'action de la société *astral* avec [`uv`]https://docs.astral.sh/uv/guides/scripts/#declaring-script-dependencies
 
 ## LE CHOIX DU MOMENT EST DE TRAVAILLER AVEC uv 
 (astral uv - a voir sur leur site les modalités d'installation varié (`pip install uv`) et l'inscription de la commande dans l'environement)
@@ -50,9 +50,9 @@ Après le .gitignore on peut commencer les cycles [`git add .`, `git commit -m "
 
 ## SE PASSER LE BALLON 🏀
 git, c'est du sport collectif. Comment se passer le ballon ? Plusieurs manière de ne pas se marcher sur les pieds:
-- dans la meme branche, les devs travaille sur des fichiers différents - chacun push son fichier dans le main et tout va bien
+- dans la meme branche, les devs travaillent sur des fichiers différents - chacun push son fichier dans le main et tout va bien
 - si pas possible, alors travailler dans une autre branche et organiser une session de merge de branche et de PR 'pull Request'
-- LA doc https://git-scm.com/book/en/v2
+- LA doc [gitPro]https://git-scm.com/book/en/v2
 
 ## ET LES DATAS ?
 Est-ce qu'on archive les données ? toujour délicat, c'est versionné tout ca, à chaque fois que les résultats change, pof version, les données d'entrée peut être, et encore.

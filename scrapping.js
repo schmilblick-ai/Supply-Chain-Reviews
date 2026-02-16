@@ -850,7 +850,7 @@ async function genericExportCSV(MYDB,storeName) {
             if (cursor) {
                 if (!headers) {
                     headers = Object.keys(cursor.value);
-                    writable.write(headers.join(',') + '\n');
+                    writable.write(headers.join(';') + '\n');
                 }
                 const line = headers.map(h => cleanCSV(cursor.value[h])).join(';');
                 writable.write(line + '\n');

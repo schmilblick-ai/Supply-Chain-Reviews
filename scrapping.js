@@ -847,12 +847,13 @@ async function genericExportCSV(MYDB,storeName) {
     return new Promise((resolve) => {
         cursorRequest.onsuccess = (e) => {
             const cursor = e.target.result;
+            const dlm=";"
             if (cursor) {
                 if (!headers) {
                     headers = Object.keys(cursor.value);
-                    writable.write(headers.join(';') + '\n');
+                    writable.write(headers.join(dlm) + '\n');
                 }
-                const line = headers.map(h => cleanCSV(cursor.value[h])).join(';');
+                const line = headers.map(h => cleanCSV(cursor.value[h])).join(dlm);
                 writable.write(line + '\n');
                 cursor.continue();
             } else {

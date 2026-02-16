@@ -105,7 +105,67 @@ pb de mémoire, fuite de la page, 4.5gb/!\ - A voir les éléments qui fuite en 
 ou l'allocation des nouvelles pages
 des snapshots doivent permettre de comprendre
 
+O P T I M I S A T I O N du script
+    Pourquoi console.log(newWin) est fatal ?
+    En JavaScript, la console n'affiche pas juste du texte, elle garde une référence vivante vers l'objet. Si tu logges newWin :
+
+    Tu logges l'objet Window.
+
+    Cet objet contient le document entier (tout le HTML de Trustpilot).
+
+    Le document contient des milliers de nœuds DOM.
+
+    Le Garbage Collector ne peut rien supprimer, car il se dit : "L'utilisateur pourrait vouloir cliquer sur ce log dans la console pour inspecter la fenêtre, je dois tout garder en RAM".
+
+    Même si tu fais newWin.close(), l'objet reste "vivant" dans les archives de ta console. Multiplié par 100 pages, tu stockes 100 arbres DOM complets.
+
+    Comment traquer ce qui reste dans le Heap Snapshot ?
+    Maintenant que tu as commenté les logs, si la mémoire monte encore, voici ce qu'il faut chercher précisément dans ton prochain snapshot (en mode Summary) :
+
+    1. Cherche "Detached HTMLDivElement" ou "Detached Element"
+    C'est le signe n°1 d'une fuite de scraping.
+
+    C'est quoi ? Ce sont des morceaux de pages web (les avis que tu as scrapés) qui ne sont plus affichés à l'écran mais qui sont toujours retenus en mémoire par une variable JS.
+
+    Le coupable : Souvent une variable globale ou une promesse await qui n'est jamais arrivée à son terme.
+
+    2. Cherche "Closure"
+    Si tu vois le nombre de closures exploser, regarde les Retainers en bas.
+
+    Cherche si tu vois setTimeout ou setInterval.
+
+    Si un setInterval (comme dans ton waitForLoad) n'est pas stoppé avec clearInterval en cas d'erreur, il garde en mémoire tout le contexte de la page, même après la fermeture de l'onglet.
+
+    Le "Nettoyage Manuel" pour confirmer
+    Pour savoir si tes modifs fonctionnent sans relancer tout le script, tu peux forcer un nettoyage dans la console :
+
+    Tape console.clear(); (ça vide les références retenues par l'historique de la console).
+
+    Clique sur l'icône de la petite poubelle dans l'onglet Memory.
+
+    Regarde si ton compteur de RAM (dans le gestionnaire de tâches Chrome Maj+Echap) descend.
+
+    Une dernière astuce de performance
+    Si tu veux garder des logs sans saturer la RAM, ne logge que des types primitifs (Strings/Numbers) :
+
+        Mauvais : console.log(newWin);
+        Mauvais : console.log(avisPage);
+        Bon : console.log("Page chargée : " + newWin.location.href);
+        Bon : console.log(Extraction finie : ${avisPage.length} avis trouvés);
+
+    Est-ce qu'après avoir commenté le log de newWin, tu as remarqué une stabilisation de la consommation de RAM sur tes 10 ou 20 premières itérations ?
+
+
+    pb, pendant que ca tourne, le vavigateur est inutilisable, comment on fait ? 
+    "C:\Program Files\Google\Chrome\Application\chrome.exe" --user-data-dir="C:/temp/chrome_scraping"
+    connecton
+    F12
+    copie du scripte
+    Attention, nouveau context, risque de perte de Application/IndexedDB
+
 */
+
+
 
 //============ U T I L I T I E S ========================================================
 
@@ -492,6 +552,73 @@ async function saveArrayToDB(dbName, storeName, data) {
     });
 }
 
+/**
+ * backupDB allows to export a store to some other place - need to see if the getAll is relevant !!
+ * @param {*} dbName 
+ * @param {*} storeName 
+ */
+async function backupDB(dbName, storeName) {
+    const db = await new Promise((resolve, reject) => {
+        const req = indexedDB.open(dbName);
+        req.onsuccess = () => resolve(req.result);
+        req.onerror = () => reject("Erreur ouverture");
+    });
+
+    const transaction = db.transaction([storeName], "readonly");
+    const store = transaction.objectStore(storeName);
+    const request = store.getAll();
+
+    request.onsuccess = () => {
+        const data = JSON.stringify(request.result);
+        const blob = new Blob([data], {type: "application/json"});
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = `${storeName}_backup.json`;
+        a.click();
+        console.log("✅ Backup prêt !");
+    };
+}
+// Utilisation :
+//await backupDB("ScraperDB", "avis");
+
+/**
+ * importDB allows to reload the db
+ * @param {*} dbName 
+ * @param {*} storeName 
+ */
+async function importDB(dbName, storeName) {
+    // Crée un sélecteur de fichier invisible
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = '.json';
+
+    input.onchange = async (e) => {
+        const file = e.target.files[0];
+        const text = await file.text();
+        const data = JSON.parse(text);
+
+        const db = await new Promise((resolve) => {
+            const req = indexedDB.open(dbName);
+            req.onsuccess = () => resolve(req.result);
+        });
+
+        const transaction = db.transaction([storeName], "readwrite");
+        const store = transaction.objectStore(storeName);
+
+        data.forEach(item => store.put(item));
+
+        transaction.oncomplete = () => {
+            console.log(`✅ Importation de ${data.length} éléments réussie !`);
+        };
+    };
+
+    input.click();
+}
+
+
+// Utilisation :
+//await importDB("ScraperDB", "avis");
 
 //============= L E  S P I D E R   T R U S T P I L O T  =============================================================
 

@@ -533,21 +533,23 @@ async function SPIDER_AvisTrustpilot(newDoc) {
   
 
         data.push({auteur
-           , note
-	   , titre
-           , commentaire: texte
-           , date_experience: dateExp
-	   , date_avis: dateAvis
-	   , url:newDoc.URL
-           , texteServiceReply: texteServiceReply
-           , dateServiceReply: dateServiceReply
-           , dataServiceReply: dataServiceReply
+            , note
+            , titre
+            , commentaire: texte
+            , date_experience: dateExp
+	        , date_avis: dateAvis
+	        , url:newDoc.URL
+            , texteServiceReply: texteServiceReply
+            , dateServiceReply: dateServiceReply
+            , dataServiceReply: dataServiceReply
         });
     });
 
     return data;
 }
 
+const controller = new AbortController();
+const signal = controller.signal;
 
 /**
  * start the stracing for a given company, notice, the spiders should be parametrized TO MAKE IT MORE GENERIC
@@ -565,10 +567,17 @@ async function startScraping(company, starts, ends) {
     for (let k=starts ; k<=ends ; k++) {
         const url = `https://www.trustpilot.com/review/${company}?languages=all&page=${k}`
         console.log(`Extraction de : ${url}`);
-        
+
+        // Si le signal est avorté, on lance une erreur pour tout stopper
+        if (signal.aborted) {
+            console.warn("Scraping annulé !");
+            return;
+        }
+
         // Ouvre la page dans une nouvelle fenêtre
         let newWin = window.open(url, `_blank_TP`);
-        console.log("Nouvelle fenetre :", newWin);
+        //attention la console est un "Retainer très puissant, ici on risque de stocker la fenetre à chaque tour, empechant de cleaner la mémoire"
+        //A NE PAS GARDER console.log("Nouvelle fenetre :", newWin);
 
 
         // Attend que la page charge (ajuster le délai selon le site)
@@ -580,7 +589,7 @@ async function startScraping(company, starts, ends) {
 
             let avisPage = await SPIDER_AvisTrustpilot(newWin.document);
             //results.push({ url, avisPage }); //avoid keeping all in memory
-            console.log("Donnée extraite :", avisPage);
+            //console.log("Donnée extraite :", avisPage);
 
             await saveArrayToDB(MY_DB,"avis",avisPage);
       	    console.log("enregistré en base ! ");
@@ -599,6 +608,8 @@ async function startScraping(company, starts, ends) {
     //console.log(JSON.stringify(results));
 }
 
+// Pour arrêter lancer l'instruction suivante dans la console:
+// controller.abort();
 
 /**
  * Element technique, Attend que la fenêtre soit chargée et que les données soient visibles - du mieux possible

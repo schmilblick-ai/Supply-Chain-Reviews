@@ -1,2 +1,5 @@
 .env
-.venv
+.venv*
+data/gpu_cache/
+data/npu_cache/
+data/cpu_cache/

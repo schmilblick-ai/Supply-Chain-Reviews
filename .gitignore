@@ -1,0 +1,6 @@
+.env
+.venv
+.git
+data_final_streamlit
+garb
+token_access_ds

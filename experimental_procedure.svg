@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="experimental_procedure.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2">
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path1175"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path1172"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-1"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path1175-5"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-4"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path1175-7"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-5"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path1175-6"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-3"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path1175-74"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-54"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path1175-744"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-0"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path1175-78"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-8"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path1175-4"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-49"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path1175-2"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-6"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path1175-8"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-66"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path1175-49"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-48"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path1175-71"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-2"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path1175-72"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-61"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path1175-0"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.42926548"
+     inkscape:cx="57.074238"
+     inkscape:cy="613.83925"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1850"
+     inkscape:window-height="1016"
+     inkscape:window-x="70"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     showguides="false"
+     inkscape:pagecheckerboard="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect10363"
+       width="534.38666"
+       height="303.86694"
+       x="-163.33617"
+       y="-0.086939514"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"
+       inkscape:export-filename="/home/robin/projets/Supply-Chain-Reviews/experimental_procedure.png" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot819"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,9.3730217,-11.299166)"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"
+       inkscape:export-filename="/home/robin/projets/Supply-Chain-Reviews/experimental_procedure.png"><flowRegion
+         id="flowRegion821"
+         style="text-align:center;text-anchor:middle"><rect
+           id="rect823"
+           width="635.01416"
+           height="137.54523"
+           x="43.652077"
+           y="49.337486"
+           style="text-align:center;text-anchor:middle" /></flowRegion><flowPara
+         id="flowPara825"
+         style="font-size:21.3333px;text-align:center;text-anchor:middle"><flowSpan
+   style="font-weight:bold"
+   id="flowSpan1148">40k avis</flowSpan> Trustpilot</flowPara></flowRoot>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot819-3"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,9.4433008,2.6862832)"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"
+       inkscape:export-filename="/home/robin/projets/Supply-Chain-Reviews/experimental_procedure.png"><flowRegion
+         id="flowRegion821-6"
+         style="text-align:center;text-anchor:middle"><rect
+           id="rect823-7"
+           width="635.01416"
+           height="137.54523"
+           x="43.652077"
+           y="49.337486"
+           style="text-align:center;text-anchor:middle" /></flowRegion><flowPara
+         style="font-weight:bold;font-size:21.3333px;text-align:center;text-anchor:middle"
+         id="flowPara851">preprocessing</flowPara></flowRoot>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot819-35"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:0.5;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,-82.779299,30.662538)"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"
+       inkscape:export-filename="/home/robin/projets/Supply-Chain-Reviews/experimental_procedure.png"><flowRegion
+         id="flowRegion821-62"
+         style="line-height:0.5;text-align:center;text-anchor:middle"><rect
+           id="rect823-9"
+           width="572.72986"
+           height="188.21025"
+           x="43.652077"
+           y="49.337486"
+           style="line-height:0.5;text-align:center;text-anchor:middle" /></flowRegion><flowPara
+         id="flowPara825-1"
+         style="font-size:21.3333px;line-height:0.5;text-align:center;text-anchor:middle">modèle <flowSpan
+   style="font-weight:bold"
+   id="flowSpan1150">paraphrase-multilingual-mpnet-base-v2</flowSpan></flowPara><flowPara
+         style="font-size:21.3333px;line-height:0.5;text-align:center;text-anchor:middle"
+         id="flowPara893">embedding phrases (et non pas tokens) mieux adapté à clustering (perception sémantique globale) + embeddings optimisés pour similarité cosine</flowPara></flowRoot>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot819-35-2"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:0.5;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,110.07523,30.662538)"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"
+       inkscape:export-filename="/home/robin/projets/Supply-Chain-Reviews/experimental_procedure.png"><flowRegion
+         id="flowRegion821-62-7"
+         style="line-height:0.5"><rect
+           id="rect823-9-0"
+           width="637.34381"
+           height="178.31255"
+           x="43.652077"
+           y="49.337486"
+           style="line-height:0.5" /></flowRegion><flowPara
+         id="flowPara825-1-9"
+         style="font-size:21.3333px;line-height:0.5;text-align:center;text-anchor:middle">modèle <flowSpan
+   style="font-weight:bold"
+   id="flowSpan1152">paraphrase-multilingual-mpnet-base-v2</flowSpan></flowPara><flowPara
+         style="font-size:21.3333px;line-height:0.5;text-align:center;text-anchor:middle"
+         id="flowPara891"><flowSpan
+   style="font-weight:bold"
+   id="flowSpan1154">+ LoRA</flowSpan> (10 epoch, batch=32) sur positive pairs générées</flowPara><flowPara
+         style="font-size:21.3333px;line-height:0.5;text-align:center;text-anchor:middle"
+         id="flowPara895">par back translation (1/3 du dataset : moitié commentaires long: &gt;75; moitié commentaires courts: &lt;=75) </flowPara></flowRoot>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot819-3-3"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:0.5;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,-19.278031,84.756221)"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"
+       inkscape:export-filename="/home/robin/projets/Supply-Chain-Reviews/experimental_procedure.png"><flowRegion
+         id="flowRegion821-6-6"
+         style="line-height:0.5;text-align:center;text-anchor:middle"><rect
+           id="rect823-7-0"
+           width="851.07806"
+           height="89.900429"
+           x="43.652077"
+           y="49.337486"
+           style="line-height:0.5;text-align:center;text-anchor:middle" /></flowRegion><flowPara
+         style="font-size:21.3333px;line-height:0.5;text-align:center;text-anchor:middle"
+         id="flowPara851-6">embeddings (<flowSpan
+   style="font-weight:bold"
+   id="flowSpan1156">normalize_embeddings = True</flowSpan>)</flowPara><flowPara
+         style="font-size:21.3333px;line-height:0.5;text-align:center;text-anchor:middle"
+         id="flowPara940">-&gt; mieux adapté à similarité cosine pour UMAP</flowPara><flowPara
+         style="font-size:21.3333px;line-height:0.5;text-align:center;text-anchor:middle"
+         id="flowPara942">-&gt; anisotropie des embeddings impact négativement la qualité du clustering </flowPara></flowRoot>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot819-3-2"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:0.5;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,-88.825869,133.18112)"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"
+       inkscape:export-filename="/home/robin/projets/Supply-Chain-Reviews/experimental_procedure.png"><flowRegion
+         id="flowRegion821-6-61"
+         style="line-height:0.5;text-align:center;text-anchor:middle"><rect
+           id="rect823-7-8"
+           width="618.54169"
+           height="121.07275"
+           x="43.652077"
+           y="49.337486"
+           style="line-height:0.5;text-align:center;text-anchor:middle" /></flowRegion><flowPara
+         style="font-size:21.3333px;line-height:0.5;text-align:center;text-anchor:middle"
+         id="flowPara851-7">optimisation réduction de dimension (<flowSpan
+   style="font-weight:bold"
+   id="flowSpan1158">UMAP</flowSpan>) + clustering <flowSpan
+   style="font-weight:bold"
+   id="flowSpan1160">HDBSCAN</flowSpan></flowPara></flowRoot>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot819-3-2-9"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:0.5;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,112.66327,133.18112)"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"
+       inkscape:export-filename="/home/robin/projets/Supply-Chain-Reviews/experimental_procedure.png"><flowRegion
+         id="flowRegion821-6-61-2"
+         style="line-height:0.5;text-align:center;text-anchor:middle"><rect
+           id="rect823-7-8-0"
+           width="618.54169"
+           height="121.07275"
+           x="43.652077"
+           y="49.337486"
+           style="line-height:0.5;text-align:center;text-anchor:middle" /></flowRegion><flowPara
+         style="font-size:21.3333px;line-height:0.5;text-align:center;text-anchor:middle"
+         id="flowPara851-7-2">optimisation réduction de dimension (<flowSpan
+   style="font-weight:bold"
+   id="flowSpan1162">UMAP</flowSpan>) + clustering <flowSpan
+   style="font-weight:bold"
+   id="flowSpan1164">KMEANS</flowSpan></flowPara></flowRoot>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot819-3-2-3"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:0.5;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,-88.926469,185.2978)"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"
+       inkscape:export-filename="/home/robin/projets/Supply-Chain-Reviews/experimental_procedure.png"><flowRegion
+         id="flowRegion821-6-61-7"
+         style="line-height:0.5;text-align:center;text-anchor:middle"><rect
+           id="rect823-7-8-5"
+           width="618.54169"
+           height="121.07275"
+           x="43.652077"
+           y="49.337486"
+           style="line-height:0.5;text-align:center;text-anchor:middle" /></flowRegion><flowPara
+         style="font-size:21.3333px;line-height:0.5;text-align:center;text-anchor:middle"
+         id="flowPara851-7-9">hierarchical clustering sur centroids + postprocess du bruit (association par similarité cosine)</flowPara></flowRoot>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot819-3-22"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:0.5;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,13.147985,148.97394)"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"
+       inkscape:export-filename="/home/robin/projets/Supply-Chain-Reviews/experimental_procedure.png"><flowRegion
+         id="flowRegion821-6-8"
+         style="line-height:0.5;text-align:center;text-anchor:middle"><rect
+           id="rect823-7-9"
+           width="607.01099"
+           height="188.60992"
+           x="43.652077"
+           y="49.337486"
+           style="line-height:0.5;text-align:center;text-anchor:middle" /></flowRegion><flowPara
+         style="font-weight:bold;font-size:21.3333px;line-height:0.5;text-align:center;text-anchor:middle"
+         id="flowPara851-73">silhouette score</flowPara><flowPara
+         style="font-size:21.3333px;line-height:0.5;text-align:center;text-anchor:middle"
+         id="flowPara1040">-&gt; compactivité des clusters</flowPara><flowPara
+         style="font-size:21.3333px;line-height:0.5;text-align:center;text-anchor:middle"
+         id="flowPara1042">-&gt; séparation des clusters</flowPara></flowRoot>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot819-3-2-3-6"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:0.5;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,11.604582,219.19523)"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"
+       inkscape:export-filename="/home/robin/projets/Supply-Chain-Reviews/experimental_procedure.png"><flowRegion
+         id="flowRegion821-6-61-7-1"
+         style="line-height:0.5;text-align:center;text-anchor:middle"><rect
+           id="rect823-7-8-5-2"
+           width="618.54169"
+           height="121.07275"
+           x="43.652077"
+           y="49.337486"
+           style="line-height:0.5;text-align:center;text-anchor:middle" /></flowRegion><flowPara
+         style="font-size:21.3333px;line-height:0.5;text-align:center;text-anchor:middle"
+         id="flowPara851-7-9-9"><flowSpan
+   style="font-weight:bold"
+   id="flowSpan14752">TF-IDF</flowSpan> + stopwords -&gt; <flowSpan
+   style="font-weight:bold"
+   id="flowSpan1168">chatgpt</flowSpan> -&gt; noms clusters définitifs</flowPara></flowRoot>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot819-3-2-3-6-3"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,-187.7375,261.13091)"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"
+       inkscape:export-filename="/home/robin/projets/Supply-Chain-Reviews/experimental_procedure.png"><flowRegion
+         id="flowRegion821-6-61-7-1-1"
+         style="text-align:center;text-anchor:middle"><rect
+           id="rect823-7-8-5-2-9"
+           width="618.54169"
+           height="121.07275"
+           x="43.652077"
+           y="49.337486"
+           style="text-align:center;text-anchor:middle" /></flowRegion><flowPara
+         style="font-weight:bold;font-size:21.3333px;text-align:center;text-anchor:middle"
+         id="flowPara851-7-9-9-4">paraphrase natif + UMAP - HDBSCAN</flowPara></flowRoot>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot819-3-2-3-6-7"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,-56.050113,261.13091)"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"
+       inkscape:export-filename="/home/robin/projets/Supply-Chain-Reviews/experimental_procedure.png"><flowRegion
+         id="flowRegion821-6-61-7-1-8"
+         style="text-align:center;text-anchor:middle"><rect
+           id="rect823-7-8-5-2-4"
+           width="618.54169"
+           height="121.07275"
+           x="43.652077"
+           y="49.337486"
+           style="text-align:center;text-anchor:middle" /></flowRegion><flowPara
+         style="font-weight:bold;font-size:21.3333px;text-align:center;text-anchor:middle"
+         id="flowPara851-7-9-9-5">paraphrase natif + UMAP - KMEANS</flowPara></flowRoot>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot819-3-2-3-6-0"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,75.877027,261.13091)"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"
+       inkscape:export-filename="/home/robin/projets/Supply-Chain-Reviews/experimental_procedure.png"><flowRegion
+         id="flowRegion821-6-61-7-1-3"
+         style="text-align:center;text-anchor:middle"><rect
+           id="rect823-7-8-5-2-6"
+           width="618.54169"
+           height="121.07275"
+           x="43.652077"
+           y="49.337486"
+           style="text-align:center;text-anchor:middle" /></flowRegion><flowPara
+         style="font-weight:bold;font-size:21.3333px;text-align:center;text-anchor:middle"
+         id="flowPara851-7-9-9-1">paraphrase + LoRA + UMAP - HDBSCAN</flowPara></flowRoot>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot819-3-2-3-6-06"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,207.56432,261.13091)"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"
+       inkscape:export-filename="/home/robin/projets/Supply-Chain-Reviews/experimental_procedure.png"><flowRegion
+         id="flowRegion821-6-61-7-1-32"
+         style="text-align:center;text-anchor:middle"><rect
+           id="rect823-7-8-5-2-0"
+           width="618.54169"
+           height="121.07275"
+           x="43.652077"
+           y="49.337486"
+           style="text-align:center;text-anchor:middle" /></flowRegion><flowPara
+         style="font-weight:bold;font-size:21.3333px;text-align:center;text-anchor:middle"
+         id="flowPara851-7-9-9-6">paraphrase + LoRA + UMAP - KMEANS</flowPara></flowRoot>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#Arrow1Lend)"
+       d="m 103.70306,12.5485 v 7.704537"
+       id="path1170"
+       inkscape:connector-curvature="0"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"
+       inkscape:export-filename="/home/robin/projets/Supply-Chain-Reviews/experimental_procedure.png" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend-1)"
+       d="M 103.39488,28.04036 78.894457,40.367619"
+       id="path1170-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"
+       inkscape:export-filename="/home/robin/projets/Supply-Chain-Reviews/experimental_procedure.png" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend-4)"
+       d="m 103.39488,28.04036 25.42497,13.714075"
+       id="path1170-6"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"
+       inkscape:export-filename="/home/robin/projets/Supply-Chain-Reviews/experimental_procedure.png" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend-5)"
+       d="M 0.45916278,68.96915 36.17426,94.105185"
+       id="path1170-9"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"
+       inkscape:export-filename="/home/robin/projets/Supply-Chain-Reviews/experimental_procedure.png" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend-3)"
+       d="M 207.45718,68.095603 161.67267,95.337911"
+       id="path1170-52"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"
+       inkscape:export-filename="/home/robin/projets/Supply-Chain-Reviews/experimental_procedure.png" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend-54)"
+       d="M 101.69989,116.18026 56.089028,142.68387"
+       id="path1170-3"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"
+       inkscape:export-filename="/home/robin/projets/Supply-Chain-Reviews/experimental_procedure.png" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend-0)"
+       d="m 101.69989,116.18026 47.76813,26.81179"
+       id="path1170-68"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"
+       inkscape:export-filename="/home/robin/projets/Supply-Chain-Reviews/experimental_procedure.png" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend-8)"
+       d="m 1.4287413,159.44957 v 38.64877"
+       id="path1170-31"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"
+       inkscape:export-filename="/home/robin/projets/Supply-Chain-Reviews/experimental_procedure.png" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend-49)"
+       d="M 2.6150063,211.70304 28.547154,230.52136"
+       id="path1170-0"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"
+       inkscape:export-filename="/home/robin/projets/Supply-Chain-Reviews/experimental_procedure.png" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend-6)"
+       d="m 206.58552,159.40292 -37.26385,69.59301"
+       id="path1170-92"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"
+       inkscape:export-filename="/home/robin/projets/Supply-Chain-Reviews/experimental_procedure.png" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend-66)"
+       d="M 63.485383,244.84603 -48.440668,274.3623"
+       id="path1170-50"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"
+       inkscape:export-filename="/home/robin/projets/Supply-Chain-Reviews/experimental_procedure.png" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend-48)"
+       d="M 63.485383,244.84603 42.115111,277.63106"
+       id="path1170-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"
+       inkscape:export-filename="/home/robin/projets/Supply-Chain-Reviews/experimental_procedure.png" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend-2)"
+       d="m 156.62455,244.87247 13.29295,29.49626"
+       id="path1170-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"
+       inkscape:export-filename="/home/robin/projets/Supply-Chain-Reviews/experimental_procedure.png" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Lend-61)"
+       d="m 156.62455,244.87247 96.05925,31.39181"
+       id="path1170-61"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600"
+       inkscape:export-filename="/home/robin/projets/Supply-Chain-Reviews/experimental_procedure.png" />
+  </g>
+</svg>

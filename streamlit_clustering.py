@@ -75,16 +75,18 @@ def assign_cluster_from_knn(
         }
 
     return best_cluster
-main_data = ""  
+    
+main_data = "data_final_streamlit"  
+
 @st.cache_resource
 def load_models(pipeline):
 	### loading models
 	model_paraphrase = SentenceTransformer('sentence-transformers/paraphrase-multilingual-mpnet-base-v2')
 	
 
-	model = AutoModel.from_pretrained("data_final_streamlit/final_lora")
+	model = AutoModel.from_pretrained(f"{main_data}/final_lora")
 
-	word_embedding_model = models.Transformer("data_final_streamlit/final_lora")
+	word_embedding_model = models.Transformer(f"{main_data}/final_lora")
 	pooling_model = models.Pooling(
 		word_embedding_model.get_word_embedding_dimension(),
 		pooling_mode_mean_tokens=True
@@ -92,10 +94,10 @@ def load_models(pipeline):
 
 	model = SentenceTransformer(modules=[word_embedding_model, pooling_model])
 	### loading reducer
-	reducer_paraphrase_hdbscan = joblib.load("data_final_streamlit/umap_paraphrase_hdbscan.pkl")
-	reducer_paraphrase_kmeans = joblib.load("data_final_streamlit/umap_paraphrase_kmeans.pkl")
-	reducer_paraphrase_lora_hdbscan = joblib.load("data_final_streamlit/umap_paraphrase_lora_hdbscan.pkl")
-	reducer_paraphrase_lora_kmeans = joblib.load("data_final_streamlit/umap_paraphrase_lora_kmeans.pkl")
+	reducer_paraphrase_hdbscan = joblib.load(f"{main_data}/umap_paraphrase_hdbscan.pkl")
+	reducer_paraphrase_kmeans = joblib.load(f"{main_data}/umap_paraphrase_kmeans.pkl")
+	reducer_paraphrase_lora_hdbscan = joblib.load(f"{main_data}/umap_paraphrase_lora_hdbscan.pkl")
+	reducer_paraphrase_lora_kmeans = joblib.load(f"{main_data}/umap_paraphrase_lora_kmeans.pkl")
 	
 	if pipeline == 'paraphrase_UMAP_HDBSCAN' :
 		return model_paraphrase, reducer_paraphrase_hdbscan
@@ -109,19 +111,19 @@ def load_models(pipeline):
 @st.cache_data
 def load_embs(pipeline):
 	### loading embeddings and labels for clustering of new input
-	data_paraphrase_hdbscan = np.load("data_final_streamlit/labels_embeddings_paraphrase_hdbscan.npz")
+	data_paraphrase_hdbscan = np.load(f"{main_data}/labels_embeddings_paraphrase_hdbscan.npz")
 	embeddings_hdbscan = data_paraphrase_hdbscan["embeddings"]
 	labels_hdbscan = data_paraphrase_hdbscan["labels"]
 
-	data_paraphrase_kmeans = np.load("data_final_streamlit/labels_embeddings_paraphrase_kmeans.npz")
+	data_paraphrase_kmeans = np.load(f"{main_data}/labels_embeddings_paraphrase_kmeans.npz")
 	embeddings_kmeans = data_paraphrase_kmeans["embeddings"]
 	labels_kmeans = data_paraphrase_kmeans["labels"]
 
-	data_paraphrase_lora_hdbscan = np.load("data_final_streamlit/labels_embeddings_paraphrase_lora_hdbscan.npz")
+	data_paraphrase_lora_hdbscan = np.load(f"{main_data}/labels_embeddings_paraphrase_lora_hdbscan.npz")
 	embeddings_lora_hdbscan = data_paraphrase_lora_hdbscan["embeddings"]
 	labels_lora_hdbscan = data_paraphrase_lora_hdbscan["labels"]
 
-	data_paraphrase_lora_kmeans = np.load("data_final_streamlit/labels_embeddings_paraphrase_lora_kmeans.npz")
+	data_paraphrase_lora_kmeans = np.load(f"{main_data}/labels_embeddings_paraphrase_lora_kmeans.npz")
 	embeddings_lora_kmeans = data_paraphrase_lora_kmeans["embeddings"]
 	labels_lora_kmeans = data_paraphrase_lora_kmeans["labels"]
 	
@@ -137,19 +139,19 @@ def load_embs(pipeline):
 @st.cache_data
 def load_embs_3d(pipeline):
 	### loading embeddings and labels for clusters visualization
-	data_paraphrase_hdbscan = np.load("data_final_streamlit/labels_embeddings_paraphrase_hdbscan_3d.npz")
+	data_paraphrase_hdbscan = np.load(f"{main_data}/labels_embeddings_paraphrase_hdbscan_3d.npz")
 	embeddings_hdbscan = data_paraphrase_hdbscan["embeddings"]
 	labels_hdbscan = data_paraphrase_hdbscan["labels"]
 
-	data_paraphrase_kmeans = np.load("data_final_streamlit/labels_embeddings_paraphrase_kmeans_3d.npz")
+	data_paraphrase_kmeans = np.load(f"{main_data}/labels_embeddings_paraphrase_kmeans_3d.npz")
 	embeddings_kmeans = data_paraphrase_kmeans["embeddings"]
 	labels_kmeans = data_paraphrase_kmeans["labels"]
 
-	data_paraphrase_lora_hdbscan = np.load("data_final_streamlit/labels_embeddings_paraphrase_lora_hdbscan_3d.npz")
+	data_paraphrase_lora_hdbscan = np.load(f"{main_data}/labels_embeddings_paraphrase_lora_hdbscan_3d.npz")
 	embeddings_lora_hdbscan = data_paraphrase_lora_hdbscan["embeddings"]
 	labels_lora_hdbscan = data_paraphrase_lora_hdbscan["labels"]
 
-	data_paraphrase_lora_kmeans = np.load("data_final_streamlit/labels_embeddings_paraphrase_lora_kmeans_3d.npz")
+	data_paraphrase_lora_kmeans = np.load(f"{main_data}/labels_embeddings_paraphrase_lora_kmeans_3d.npz")
 	embeddings_lora_kmeans = data_paraphrase_lora_kmeans["embeddings"]
 	labels_lora_kmeans = data_paraphrase_lora_kmeans["labels"]
 	
@@ -176,11 +178,11 @@ def predict(text, pipeline):
         return assign_cluster_from_knn(emb_umap, emb_corpus, labels)
 
     elif pipeline == 'paraphrase_UMAP_KMEANS':
-        kmeans = joblib.load("data_final_streamlit/kmeans_paraphrase.pkl")
+        kmeans = joblib.load(f"{main_data}/kmeans_paraphrase.pkl")
         return kmeans.predict(emb_umap)[0]
 
     elif pipeline == 'paraphrase_LoRA_UMAP_KMEANS':
-        kmeans = joblib.load("data_final_streamlit/kmeans_paraphrase_lora.pkl")
+        kmeans = joblib.load(f"{main_data}/kmeans_paraphrase_lora.pkl")
         return kmeans.predict(emb_umap)[0]
 
 
@@ -197,8 +199,8 @@ page=st.sidebar.radio("Aller vers", pages)
 if page == pages[0] : 
 	
 	### Chargement des données :
-	df_lang = pd.read_csv('data_final_streamlit/40k_langdetect.csv', sep=',', header=0, index_col=0) # chargement des données traitées pour la langue
-	df_final = pd.read_csv('data_final_streamlit/40k_final_process.csv', sep=',', header=0, index_col=0) # chargement des données après preprocessing final
+	df_lang = pd.read_csv(f'{main_data}/40k_langdetect.csv', sep=',', header=0, index_col=0) # chargement des données traitées pour la langue
+	df_final = pd.read_csv(f'{main_data}/40k_final_process.csv', sep=',', header=0, index_col=0) # chargement des données après preprocessing final
 	
 	st.write("### DataVizualization and experimental setup")
 
@@ -259,7 +261,7 @@ if page == pages[0] :
 	st.plotly_chart(fig, use_container_width=True)
 	
 ### figure statique: experimental setup
-	st.image("data_final_streamlit/experimental_procedure.png")
+	st.image(f"{main_data}/experimental_procedure.png")
 	
 	
 

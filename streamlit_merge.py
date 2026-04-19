@@ -254,7 +254,7 @@ tab1, tab2, tab3, tab4 = st.tabs([
     "🔍 Exploration",
     "📈 Data Viz",
     "🤖 BERTopic",
-    "🤖 SentenceTransformer"
+    "🤖 paraphrase + LoRA"
 ])
 # ---------------------------------------------------------
 # TAB 1 : EXPLORATION (Nettoyage & Statistiques Brutes)
@@ -695,7 +695,7 @@ with tab3:
                             
                             st.plotly_chart(fig_all_probs, use_container_width=True)
 with tab4:
-    st.header("🤖 Modélisation avec SentenceTransformer")
+    st.header("🤖 Modélisation avec paraphrase + LoRA")
     st.markdown("---")
     
     subtab1, subtab2 = st.tabs([
